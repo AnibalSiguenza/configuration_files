@@ -14,6 +14,8 @@ Plugin 'VundleVim/Vundle.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 
+"Quickfix enter
+Plugin 'yssl/QFEnter'
 " NERDTree
 Plugin 'scrooloose/nerdtree'
 " Auto-pairs (to complete {, (, [, etc.)
@@ -71,9 +73,8 @@ nmap <F3> :call CurtineIncSw()<CR>
 nmap <F2> :w<CR>
 " in insert mode F2 will exit insert, save, enters insert again
 imap <F2> <ESC>:w<CR>i
-" build using makeprg with <F7>
-map <F7> :make<CR>
-
+" build using makeprg with <F4>
+map <F4> :make<CR>:ccl<CR>:cw<ENTER>
 
 " Close VIM when only NERDTree is open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
