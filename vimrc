@@ -82,7 +82,7 @@ nmap <F3> :call CurtineIncSw()<CR>
 " in normal mode F2 will save the file
 nmap <F2> :w<CR>
 " in insert mode F2 will exit insert, save, enters insert again
-imap <F2> <ESC>:w<CR>i
+imap <F2> <ESC>:w<CR>
 " build using makeprg with <F4>
 map <F4> :ccl<CR> :w!<CR> :make<CR> :cw<CR>
 imap <F4> <ESC> :ccl<CR> :w! :make<CR> :cw<CR>
