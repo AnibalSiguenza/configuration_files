@@ -11,6 +11,9 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+"auto complete plugin 
+Plugin 'Valloric/YouCompleteMe'
+
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 
@@ -86,6 +89,9 @@ imap <F2> <ESC>:w<CR>
 " build using makeprg with <F4>
 map <F4> :ccl<CR> :w!<CR> :make<CR> :cw<CR>
 imap <F4> <ESC> :ccl<CR> :w! :make<CR> :cw<CR>
+
+"go to the shell
+map gs :sh <CR>
 
 " Close VIM when only NERDTree is open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
