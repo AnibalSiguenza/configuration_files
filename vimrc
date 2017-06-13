@@ -82,16 +82,22 @@ nmap <C-c> :wq<CR>
 "Making the F keys functions"
 " Change btw source and header by pressing <F1>
 nmap <F3> :call CurtineIncSw()<CR>
+
 " in normal mode F2 will save the file
 nmap <F2> :w<CR>
 " in insert mode F2 will exit insert, save, enters insert again
+"
 imap <F2> <ESC>:w<CR>
+
 " build using makeprg with <F4>
 map <F4> :ccl<CR> :w!<CR> :make<CR> :cw<CR>
 imap <F4> <ESC> :ccl<CR> :w! :make<CR> :cw<CR>
 
 "go to the shell
 map gs :sh <CR>
+
+"paste and keep word
+nmap <C-p> pgvy<C-o>
 
 " Close VIM when only NERDTree is open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
