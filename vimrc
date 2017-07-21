@@ -76,6 +76,10 @@ set undodir=$HOME/.vim/undo " where to save undo histories
 set undolevels=1000         " How many undos
 set undoreload=10000        " number of lines to save for undo
 
+" Disable preview: this avoids the suggestion in structures of the
+" youcompleteme
+set completeopt-=preview
+
 " Save and exit in normal mode with Ctrl-c
 nmap <C-c> :wq<CR>
 
@@ -85,8 +89,8 @@ nmap <F3> :call CurtineIncSw()<CR>
 
 " in normal mode F2 will save the file
 nmap <F2> :w<CR>
+
 " in insert mode F2 will exit insert, save, enters insert again
-"
 imap <F2> <ESC>:w<CR>
 
 " build using makeprg with <F4>
@@ -97,7 +101,7 @@ imap <F4> <ESC> :ccl<CR> :w! :make<CR> :cw<CR>
 map gs :sh <CR>
 
 "paste and keep word
-nmap <C-p> pgvy<C-o>
+"vmap <SPACE>p: p<ESC>gvy
 
 " Close VIM when only NERDTree is open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
