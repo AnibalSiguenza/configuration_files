@@ -43,8 +43,10 @@ let g:airline_powerline_fonts = 1
 " Define theme status bar
 let g:airline_theme='light'
 
-"Line number"
+"Line number and line number modes
 set number
+nmap <SPACE>r :set relativenumber<CR>
+nmap <SPACE>n :set norelativenumber<CR>
 
 "Show all the coincidence in searh"
 :set hlsearch
