@@ -107,3 +107,9 @@ map gs :sh <CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " Use Ctrl-n in normal mode to toggle NERDTree
 nmap <C-n> :NERDTreeToggle<CR>
+
+" Navigate between windows using <SPACE>+Arrows
+nmap <SPACE><Up> <C-w>k
+nmap <SPACE><Down> <C-w>j
+nmap <SPACE><Left> <C-w>h
+nmap <SPACE><Right> <C-w>l
