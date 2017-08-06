@@ -10,15 +10,12 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-
 "auto complete plugin 
 Plugin 'Valloric/YouCompleteMe'
-
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-
 "Quickfix enter
 Plugin 'yssl/QFEnter'
+" Undo managment
+Plugin 'mbbill/undotree'
 " NERDTree
 Plugin 'scrooloose/nerdtree'
 " Auto-pairs (to complete {, (, [, etc.)
@@ -72,11 +69,10 @@ set softtabstop=4
 set shiftwidth=4
 set expandtab
 
-"infinite undu
-set undofile                " Save undo's after file closes
-set undodir=$HOME/.vim/undo " where to save undo histories
-set undolevels=1000         " How many undos
-set undoreload=10000        " number of lines to save for undo
+"infinite undo
+nnoremap <F5> :UndotreeToggle<cr>
+set undodir=~/.undodir/
+set undofile
 
 " Disable preview: this avoids the suggestion in structures of the
 " youcompleteme
