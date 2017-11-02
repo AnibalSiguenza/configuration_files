@@ -60,7 +60,7 @@ nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
 
 "Color column at 110 character"
-set colorcolumn=150
+set colorcolumn=134
 highlight ColorColumn ctermbg=darkblue
 
 " Identation and other stuff
