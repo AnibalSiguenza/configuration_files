@@ -83,7 +83,7 @@ nmap <C-c> :wq<CR>
 
 "Making the F keys functions"
 " Change btw source and header by pressing <F1>
-nmap <F3> :call CurtineIncSw()<CR>
+map <F3> :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
 
 " in normal mode F2 will save the file
 nmap <F2> :w<CR>
