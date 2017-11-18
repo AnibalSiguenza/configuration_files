@@ -68,6 +68,9 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
+" to show the tabs
+set list
+set listchars=tab:>-
 
 "infinite undo
 nnoremap <F5> :UndotreeToggle<cr>
