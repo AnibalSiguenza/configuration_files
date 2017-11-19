@@ -84,3 +84,17 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+#Anibals Configurations after this ##############################
+#make automatic ls after cd
+function cd {
+        builtin cd "$@" && ls
+}
+
+#make git shortcuts
+alias gs='git status '
+alias ga='git add '
+alias gb='git branch '
+alias gc='git commit'
+alias gd='git diff'
+alias go='git checkout '
