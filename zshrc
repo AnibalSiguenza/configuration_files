@@ -100,3 +100,6 @@ alias gd='git diff'
 alias gp='git pull '
 alias gpu='git push '
 alias go='git checkout '
+
+export PETSC_DIR=/home/anibal/petsc-3.5.4
+export PETSC_ARCH = arch-linux2-c-debug
