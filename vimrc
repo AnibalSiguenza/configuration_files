@@ -10,21 +10,30 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+
 "auto complete plugin 
 Plugin 'Valloric/YouCompleteMe'
+
 "Quickfix enter
 Plugin 'yssl/QFEnter'
+
 " Undo managment
 Plugin 'mbbill/undotree'
+
 " NERDTree
 Plugin 'scrooloose/nerdtree'
+let NERDTreeIgnore = ['\.o$'] 
+
 " Auto-pairs (to complete {, (, [, etc.)
 Plugin 'jiangmiao/auto-pairs'
+
 " Plugin to change btw .h and .c
 Plugin 'ericcurtin/CurtineIncSw.vim'
+
 " Plugin to show a status bar
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+
 " Plugin to manage Git
 Plugin 'tpope/vim-fugitive'
 
@@ -35,7 +44,7 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 "" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<C-j>"
-let g:UltiSnipsJumpForwardTrigger="<TAB>"
+let g:UltiSnipsJumpForwardTrigger="<C-j>"
 let g:UltiSnipsJumpBackwardTrigger="<C-k>"
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
