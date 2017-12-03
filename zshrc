@@ -104,3 +104,7 @@ alias grh='git reset --hard '
 
 export PETSC_DIR=/home/anibal/petsc-3.5.4
 export PETSC_ARCH = arch-linux2-c-debug
+
+#TUM shorcuts
+alias gotum = 'ssh -YC torres@lxhalle.informatik.tu-muenchen.de '
+alias gocfd = 'ssh -Y lxlogin6.lrz.de -l di29wav'
