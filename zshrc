@@ -102,9 +102,14 @@ alias gpu='git push '
 alias go='git checkout '
 alias grh='git reset --hard '
 
-#TUM shorcuts
+#TUM shortcuts
 alias gotum='ssh -YC torres@lxhalle.informatik.tu-muenchen.de '
 alias gocfd='ssh -Y lxlogin6.lrz.de -l di29wav'
+
+#update shortcuts
+alias update1='sudo apt-get update        # Fetches the list of available updates'
+alias update2='sudo apt-get upgrade       # Strictly upgrades the current packages'
+alias update3='sudo apt-get dist-upgrade  # Installs updates (new ones)'
 
 #PETSI configuration
 export PETSC_DIR=/home/anibal/petsc-3.5.4
