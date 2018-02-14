@@ -14,7 +14,7 @@ Plugin 'VundleVim/Vundle.vim'
 "auto complete plugin 
 Plugin 'Valloric/YouCompleteMe'
 
-"Quickfix enter
+"Quickfix enter: to compile c++ and see the compile errors press <F3> and enter
 Plugin 'yssl/QFEnter'
 
 " Undo managment
@@ -48,9 +48,6 @@ let g:UltiSnipsJumpForwardTrigger="<C-j>"
 let g:UltiSnipsJumpBackwardTrigger="<C-k>"
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" If you want :UltiSnipsEdit to split your window.
-" let g:UltiSnipsEditSplit="vertical"
-" "
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
