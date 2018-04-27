@@ -46,6 +46,7 @@ Plugin 'honza/vim-snippets'
 let g:UltiSnipsExpandTrigger="<C-j>"
 let g:UltiSnipsJumpForwardTrigger="<C-j>"
 let g:UltiSnipsJumpBackwardTrigger="<C-k>"
+let g:UltiSnipsSnippetDirectories=["PersonalUltisnips", "UltiSnips"]
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " All of your Plugins must be added before the following line
