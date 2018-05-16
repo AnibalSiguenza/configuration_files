@@ -91,6 +91,9 @@ function cd {
         builtin cd "$@" && ls
 }
 
+#make zsh like a vim command
+bindkey -v
+
 #make git shortcuts
 alias gs='git status '
 alias ga='git add '
