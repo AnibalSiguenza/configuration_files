@@ -51,8 +51,10 @@ ZSH_THEME="frisk"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
-plugins=(zsh-autosuggestions)
+plugins=(git
+    zsh-autosuggestions
+    vi-mode
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -117,4 +119,3 @@ alias update3='sudo apt-get dist-upgrade  # Installs updates (new ones)'
 #PETSI configuration
 export PETSC_DIR=/home/anibal/petsc-3.5.4
 export PETSC_ARCH = arch-linux2-c-debug
-
