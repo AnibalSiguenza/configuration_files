@@ -120,5 +120,9 @@ alias update3='sudo apt-get dist-upgrade  # Installs updates (new ones)'
 alias matlab='matlab &'
 
 #PETSI configuration
-export PETSC_DIR=/home/anibal/petsc-3.5.4
-export PETSC_ARCH = arch-linux2-c-debug
+export PETSC_DIR='/home/anibal/petsc-3.5.4'
+export PETSC_ARCH='arch-linux2-c-debug'
+
+#Thesis configuration
+export HDF5_INC='-I/usr/include/hdf5/mpich/'
+export HDF5_LIB='-L/usr/lib/x86_64-linux-gnu/hdf5/mpich -lhdf5_hl -lhdf5'
