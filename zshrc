@@ -116,6 +116,9 @@ alias update1='sudo apt-get update        # Fetches the list of available update
 alias update2='sudo apt-get upgrade       # Strictly upgrades the current packages'
 alias update3='sudo apt-get dist-upgrade  # Installs updates (new ones)'
 
+#deatach matlab
+alias matlab='matlab &'
+
 #PETSI configuration
 export PETSC_DIR=/home/anibal/petsc-3.5.4
 export PETSC_ARCH = arch-linux2-c-debug
