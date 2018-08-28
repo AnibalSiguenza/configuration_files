@@ -81,7 +81,7 @@ nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
 
 "Color column at 110 character"
-set colorcolumn=134
+set colorcolumn=102
 highlight ColorColumn ctermbg=darkblue
 
 " Identation and other stuff
