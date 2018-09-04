@@ -49,6 +49,24 @@ class ${1:`!p snip.rv = snip.basename or "name"`}
 	virtual ~${1/(\w+).*/$1/} (){
 		std::cout << "Destroying " << _name << std::endl;
 	}
+	${1/(\w+).*/$1/}(const ${1/(\w+).*/$1/} & x){                                                                           
+		_name = x._name;                                                                              
+		std::cout<< "Copy constructing " << _name << std::endl;                                       
+	}                                                                                                 
+	const ${1/(\w+).*/$1/} & operator=(const ${1/(\w+).*/$1/} & x){                                                         
+		_name = x._name;                                                                              
+		std::cout<< "Assign " << _name << std::endl;                                                  
+		return *this;                                                                                 
+	}                                                                                                 
+	const ${1/(\w+).*/$1/} & operator=(const ${1/(\w+).*/$1/} && x){                                                        
+		_name = x._name;                                                                              
+		std::cout<< "Move Assign " << _name << std::endl;                                             
+		return *this;                                                                                 
+	}                                                                                                 
+	${1/(\w+).*/$1/}(const ${1/(\w+).*/$1/} && x){                                                                          
+		_name = x._name;                                                                              
+		std::cout<< "Move Constructor " << _name << std::endl;                                        
+	} 
 	void hello(){
 		std::cout << _name << " says hi! ;)" << std::endl;
 	}
