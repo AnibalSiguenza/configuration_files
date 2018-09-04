@@ -126,4 +126,4 @@ export PETSC_ARCH='arch-linux2-c-debug'
 #Thesis configuration
 export HDF5_INC='-I/usr/include/hdf5/mpich/'
 export HDF5_LIB='-L/usr/lib/x86_64-linux-gnu/hdf5/mpich -lhdf5_hl -lhdf5'
-alias tmuxThesis='~/git/configuration_files/tmuxThesis.sh'
+alias thesisTmux='~/git/configuration_files/tmuxThesis.sh'
