@@ -36,3 +36,21 @@ int main(int argc, char *argv[]){
 	return 0;
 }
 endsnippet
+
+snippet cltest "class .. (class)"
+class ${1:`!p snip.rv = snip.basename or "name"`}
+{
+	std::string _name;
+	public:
+	${1/(\w+).*/$1/} (std::string name){
+		_name = name;
+		std::cout << "Creating " << _name << std::endl;
+	}
+	virtual ~${1/(\w+).*/$1/} (){
+		std::cout << "Destroying " << _name << std::endl;
+	}
+	void hello(){
+		std::cout << _name << " says hi! ;)" << std::endl;
+	}
+};
+endsnippet
