@@ -2,5 +2,5 @@
 
 def FlagsForFile( filename, **kwargs  ):
     return {
-        'flags': [ '-x', 'c++', '-Wall', '-pedantic', '-Werror', '-I/usr/include/mpi'],
+        'flags': [ '-x', 'c++', '-Wall', '-pedantic', '-Werror', '-I/usr/include/mpi', '-I./src'],
     }
