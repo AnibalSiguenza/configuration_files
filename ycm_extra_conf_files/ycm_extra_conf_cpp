@@ -1,3 +1,5 @@
+# vim: set filetype=python: 
+
 def FlagsForFile( filename, **kwargs  ):
     return {
         'flags': [ '-x', 'c++', '-Wall', '-pedantic', '-Werror', '-I/usr/include/mpi'],
