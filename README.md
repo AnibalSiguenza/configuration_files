@@ -35,7 +35,7 @@ ln -s ~/git/configuration_files/zshrc ~/.zshrc
 1. Install and link configuration file:
 ```
 sudo apt-get install vim
-ln -s git/configuration_files/vimrc ~/.vimrc
+ln -s ~/git/configuration_files/vimrc ~/.vimrc
 ```
 
 2. Instal vundle
