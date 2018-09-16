@@ -95,6 +95,7 @@ function cd {
 
 #make zsh like a vim command
 bindkey -v
+export MODE_INDICATOR="%{$fg_bold[blue]%}[NORMAL]"
 
 #make git shortcuts
 alias gs='git status '
