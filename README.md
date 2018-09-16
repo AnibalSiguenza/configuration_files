@@ -65,4 +65,12 @@ sudo apt-get install tmux
 
 2. Download gpakosz configuration file https://github.com/gpakosz/.tmux
 
+```
+cd ~/git && git clone https://github.com/gpakosz/.tmux.git 
+```
 
+3. Linking the configurations 
+```
+ln -s ~/git/.tmux/.tmux.conf ~/.tmux.conf
+ln -s ~/git/configuration_files/tmux.conf.local ~/.tmux.conf.local
+```
