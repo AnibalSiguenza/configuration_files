@@ -93,6 +93,9 @@ function cd {
         builtin cd "$@" && ls
 }
 
+#remove all swp recursively
+alias rmswp='find . -type f -name ".*.swp" -exec rm -f {} \;'
+
 #make zsh like a vim command
 bindkey -v
 export MODE_INDICATOR="%{$fg_bold[blue]%}[NORMAL]"
