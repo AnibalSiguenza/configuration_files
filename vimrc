@@ -119,6 +119,8 @@ imap <F2> <ESC>:w<CR>
 map <F4> :ccl<CR> :w!<CR> :make<CR> :cw<CR>
 imap <F4> <ESC> :ccl<CR> :w! :make<CR> :cw<CR>
 
+" Stay in same word while searching
+nmap * *N
 "go to the shell
 map gs :sh <CR>
 
