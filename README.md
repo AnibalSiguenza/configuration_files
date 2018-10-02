@@ -51,8 +51,11 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 :PluginInstall
 sudo apt-get install build-essential cmake
 sudo apt-get install python-dev python3-dev
+#to compile and set YouCompleteMe
 cd ~/.vim/bundle/YouCompleteMe && ./install.py --clang-completer
 ln -s ~/git/configuration_files/PersonalUltisnips ~/.vim/bundle/vim-snippets
+#to set UndutreeToggle
+mkdir ~/.undodir/
 ```
 
 ## tmux
