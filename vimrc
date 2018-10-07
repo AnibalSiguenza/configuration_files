@@ -48,6 +48,11 @@ let g:UltiSnipsJumpForwardTrigger="<C-j>"
 let g:UltiSnipsJumpBackwardTrigger="<C-k>"
 let g:UltiSnipsSnippetDirectories=["PersonalUltisnips", "UltiSnips"]
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugin to add comments
+Plugin 'tpope/vim-commentary'
+" Toggle comments with <SPACE>c
+nmap <SPACE>c :Commentary<CR>
+vmap <SPACE>c :Commentary<CR>
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
