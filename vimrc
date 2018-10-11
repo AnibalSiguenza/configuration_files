@@ -53,6 +53,8 @@ Plugin 'tpope/vim-commentary'
 " Toggle comments with <SPACE>c
 nmap <SPACE>c :Commentary<CR>
 vmap <SPACE>c :Commentary<CR>
+autocmd FileType c setlocal commentstring=//\ %s
+autocmd FileType cpp setlocal commentstring=//\ %s
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
