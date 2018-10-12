@@ -146,4 +146,4 @@ nmap <SPACE><Left> <C-w>h
 nmap <SPACE><Right> <C-w>l
 
 " Search and replace
-nmap <SPACE>h "zyiw:%s/<C-r>z//gc<LEFT><LEFT><LEFT>"
+nmap <SPACE>h "zyiw:%s/<C-r>z//gc<LEFT><LEFT><LEFT>
