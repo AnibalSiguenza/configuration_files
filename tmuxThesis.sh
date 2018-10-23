@@ -5,7 +5,7 @@ tmux send-keys -t 1 ':NERDTreeToggle' Enter
 tmux send-keys -t 1 ':tabnew src/main.cpp' Enter
 tmux send-keys -t 1 ':tabnew inputfile.xml' Enter
 tmux send-keys -t 1 'gt' Enter
-tmux send-keys -t 1 '5j' Enter
+tmux send-keys -t 1 '4j' Enter
 
 #Actions second window
 tmux new-window
