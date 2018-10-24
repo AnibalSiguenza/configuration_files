@@ -145,8 +145,13 @@ nmap <SPACE><Down> <C-w>j
 nmap <SPACE><Left> <C-w>h
 nmap <SPACE><Right> <C-w>l
 
+nmap <SPACE>k <C-w>k
+nmap <SPACE>j <C-w>j
+nmap <SPACE>h <C-w>h
+nmap <SPACE>l <C-w>l
+
 " Search and replace
-nmap <SPACE>h "zyiw:%s/<C-r>z//gc<LEFT><LEFT><LEFT>
+nmap <SPACE>H "zyiw:%s/<C-r>z//gc<LEFT><LEFT><LEFT>
 
 " seach all occurrences of a expresion recursivelly in cpp and h
 nmap <F7> "zyiw:vimgrep <C-r>z **/*.cpp<CR> :cw<CR>
