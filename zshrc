@@ -93,6 +93,9 @@ function cd {
         builtin cd "$@" && ls
 }
 
+#autocomplete with ctrl + space
+bindkey '^ ' autosuggest-accept
+
 #remove all swp recursively
 alias rmswp='find . -type f -name ".*.swp" -exec rm -f {} \;'
 
