@@ -113,10 +113,11 @@ alias gp='git pull '
 alias gpu='git push '
 alias go='git checkout '
 alias grh='git reset --hard '
+alias glog='git log --oneline'
 
 #TUM shortcuts
 alias gotum='ssh -YC torres@lxhalle.informatik.tu-muenchen.de '
-alias gocfd='ssh -Y lxlogin6.lrz.de -l di29wav'
+alias gothesis='ssh -XY lxlogin8.lrz.de -l di52kur'
 
 #update shortcuts
 alias update1='sudo apt-get update        # Fetches the list of available updates'
