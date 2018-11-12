@@ -117,7 +117,8 @@ alias glog='git log --oneline'
 
 #TUM shortcuts
 alias gotum='ssh -YC torres@lxhalle.informatik.tu-muenchen.de '
-alias gothesis='ssh -XY lxlogin8.lrz.de -l di52kur'
+alias gothesis5='ssh -XY lxlogin5.lrz.de -l di52kur'
+alias gothesis8='ssh -XY lxlogin8.lrz.de -l di52kur'
 
 #update shortcuts
 alias update1='sudo apt-get update        # Fetches the list of available updates'
