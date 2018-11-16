@@ -36,6 +36,8 @@ Plugin 'vim-airline/vim-airline-themes'
 
 " Plugin to manage Git
 Plugin 'tpope/vim-fugitive'
+" Fugitive is required for Conflicted
+Plugin 'christoomey/vim-conflicted'
 
 " Plugin for do quick snipest """"""""""""""""""""""""""""""""""""""""""
 " Track the engine.
