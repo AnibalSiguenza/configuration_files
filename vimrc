@@ -114,10 +114,6 @@ set completeopt-=preview
 " Save and exit in normal mode with Ctrl-c
 nmap <C-c> :wq<CR>
 
-"Making the F keys functions"
-" Change btw source and header by pressing <F1>
-map <F3> :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
-
 " in normal mode F2 will save the file
 nmap <F2> :w<CR>
 
@@ -155,6 +151,13 @@ nmap <SPACE>l <C-w>l
 " Search and replace
 nmap <SPACE>H "zyiw:%s/<C-r>z//gc<LEFT><LEFT><LEFT>
 
+" c++ specifics config
 " seach all occurrences of a expresion recursivelly in cpp and h
 nmap <F7> "zyiw:vimgrep <C-r>z **/*.cpp<CR> :cw<CR>
 nmap <F8> "zyiw:vimgrep <C-r>z **/*.h<CR> :cw<CR>
+
+" Change btw source and header by pressing <F1>
+map <F3> :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
+
+" automatically define function in cpp
+map <SPACE>F yy<F3>G<CR>p==:w!<CR><F3>/class<CR>wyw<F3>G%%BPa::<ESC>%ls{<CR><ESC>dd
