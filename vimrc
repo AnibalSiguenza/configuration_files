@@ -161,3 +161,9 @@ map <F3> :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
 
 " automatically define function in cpp
 map <SPACE>F yy<F3>G<CR>p==:w!<CR><F3>/class<CR>wyw<F3>G%%BPa::<ESC>%ls{<CR><ESC>dd
+
+" Copy to system clipboard by default. You need to have clipboard feature flag
+" enable to this to work. To check it, just execute vim --version and look for
+" clipboard. If we have + is fine, if we have - we will need to install
+" something extra. In the case of ubuntu, just install vim-gnome
+set clipboard=unnamedplus
