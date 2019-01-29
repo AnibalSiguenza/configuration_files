@@ -137,3 +137,7 @@ export HDF5_INC='-I/usr/include/hdf5/mpich/'
 export HDF5_LIB='-L/usr/lib/x86_64-linux-gnu/hdf5/mpich -lhdf5_hl -lhdf5'
 alias thesisTmux='~/git/configuration_files/tmuxThesis.sh'
 alias thesisDATA='~/git/configuration_files/tmuxDataAnalysis.sh'
+alias bibUpdate='cp ~/Documents/Bib/master_thesis.bib ~/git/thesis_tex/bibliography/literature.bib &&
+  pdflatex -shell-escape -output-directory build main.tex &&
+  bibtex build/main &&
+  pdflatex -shell-escape -output-directory build main.tex'
