@@ -167,3 +167,6 @@ map <SPACE>F yy<F3>G<CR>p==:w!<CR><F3>/class<CR>wyw<F3>G%%BPa::<ESC>%ls{<CR><ESC
 " clipboard. If we have + is fine, if we have - we will need to install
 " something extra. In the case of ubuntu, just install vim-gnome
 set clipboard=unnamedplus
+
+"Thesis helpfull functions
+nmap gi 141ggH
