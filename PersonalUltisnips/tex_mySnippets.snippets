@@ -1,0 +1,20 @@
+priority -50
+
+extends texmath
+
+# We want to overwrite everything in parent ft.
+priority -49
+###########################################################################
+#			    Global functions 						  #
+###########################################################################
+
+snippet c++ "to add c++ code"
+\begin{listing}[ht]
+	%the language syntax can be declared here.
+	\begin{minted}{c++} 
+	${VISUAL}$0
+	\end{minted}
+	\caption{}
+	\label{lst:}
+\end{listing}
+endsnippet
